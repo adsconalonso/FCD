@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Etiquetas SEO y Open Graph Optimizadas -->
+    <title>Tu etapa actual: Caos Financiero | Diego Tobón</title>
+    <meta name="description"
+        content="Hoy tu problema no es cuánto ganas, es que no tienes control. Instala un sistema financiero real para salir del caos.">
+
+    <!-- Open Graph para compartir en WhatsApp/Redes -->
+    <meta property="og:title" content="Tu etapa actual: Caos Financiero">
+    <meta property="og:description"
+        content="Tu dinero entra y sale sin reglas claras. Es hora de instalar un sistema de control.">
+    <meta property="og:image"
+        content="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b89e483e6072835d4f62be.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="URL_DE_TU_LOGO_AQUI.png">
+
+    <!-- Scripts y Estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0f3c7a',
+                            darkBlue: '#0a254a',
+                            yellow: '#fbbf24',
+                            darkYellow: '#f59e0b',
+                            light: '#f3f4f6',
+                            green: '#22c55e',
+                            red: '#ef4444'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Sombras y efectos de botones */
+        .btn-shadow {
+            box-shadow: 0 4px 0 #b45309;
+            transition: all 0.2s ease;
+        }
+
+        .btn-shadow:hover {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #b45309;
+        }
+
+        .btn-shadow:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #b45309;
+        }
+
+        /* Acordeón */
+        .accordion-content {
+            transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.active {
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        .rotate-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .rotate-icon.active {
+            transform: rotate(180deg);
+        }
+
+        /* Efecto Hover Tarjetas */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Animación Flotante */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .icon-animate {
+            display: inline-block !important;
+            animation: float 3s ease-in-out infinite !important;
+        }
+
+        /* EFECTO VSL EXPANDIDO (MÓVIL Y PC) */
+        .video-expanded {
+            box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.9) !important;
+            z-index: 50 !important;
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            .video-expanded {
+                transform: scale(1.12) translateY(-15px);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .video-expanded {
+                /* Crece un 25% y se mueve a la izquierda para superponerse al texto elegantemente */
+                transform: scale(1.25) translateX(-8%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- 1. SECCIÓN HERO -->
+    <header class="bg-brand-darkBlue text-white pb-20 pt-16 px-4 overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue rounded-full filter blur-[120px] opacity-40 translate-x-1/2 -translate-y-1/4">
+        </div>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 md:gap-16 items-center relative z-10">
+
+            <!-- Texto izquierdo -->
+            <div class="text-center md:text-left">
+                <span
+                    class="inline-block bg-brand-yellow text-brand-darkBlue font-extrabold px-4 py-1.5 rounded-full text-xs md:text-sm mb-6 tracking-wide shadow-sm uppercase">
+                    TU ETAPA ACTUAL ES: CAOS FINANCIERO
+                </span>
+
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 font-heading">
+                    Tu etapa actual es: <br>
+                    <span class="text-brand-yellow">CAOS FINANCIERO</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-blue-100 mb-4 leading-relaxed font-medium">
+                    Hoy tu problema no es cuánto ganas, es que <strong class="text-white">no tienes control</strong>. 
+                    Tu dinero entra y sale sin reglas claras, sin presupuesto firme y sin rutina de revisión.
+                </p>
+                <p class="text-base text-gray-300 mb-6 font-medium leading-relaxed">
+                    Eso hace que cualquier esfuerzo se pierda y que sientas que "la plata se evapora". <br>
+                    No es falta de ganas. <strong class="text-white text-lg">Es falta de sistema.</strong>
+                </p>
+
+                <!-- NUEVO BOTÓN EXCLUSIVO MÓVIL (ANTES DEL VIDEO) -->
+                <a href="#oferta"
+                    class="btn-text flex md:hidden justify-center items-center bg-brand-yellow text-brand-darkBlue font-black text-lg px-6 py-4 rounded-xl btn-shadow transition-all w-full text-center mb-8 hover:bg-yellow-400 group">
+                    [ 👉 EMPIEZA POR EL PROGRAMA ]
+                </a>
+
+                <!-- VIDEO (VERSIÓN MÓVIL) -->
+                <div class="relative flex md:hidden justify-center items-center w-full mb-8 z-30">
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-800 opacity-30 blur-3xl rounded-full -z-10">
+                    </div>
+                    <div class="relative z-10 flex items-center justify-center w-full">
+                        <div
+                            class="relative w-full aspect-video video-wrapper rounded-2xl shadow-2xl border-4 border-white/20 bg-brand-darkBlue overflow-hidden transition-all duration-500 ease-out origin-center">
+                            <!-- POSTER CSS PERSONALIZADO (EFECTO BORROSO / GLASSMORPHISM) -->
+                            <div
+                                class="custom-video-poster absolute inset-0 bg-brand-darkBlue/40 backdrop-blur-md flex flex-col items-center justify-center cursor-pointer z-20 transition-opacity duration-300">
+                                <div
+                                    class="bg-brand-yellow text-brand-darkBlue w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-3 shadow-[0_0_20px_rgba(251,191,36,0.6)] animate-pulse">
+                                    <i class="fas fa-play ml-1"></i>
+                                </div>
+                                <span
+                                    class="text-white font-black text-lg font-heading tracking-wide uppercase text-center px-4 leading-tight drop-shadow-md">
+                                    Descubre el sistema<br><span class="text-brand-yellow text-xs">(Dale Play)</span>
+                                </span>
+                            </div>
+                            <!-- VIDEO (Enlace viejo con #t=0.1 para forzar primer frame como fondo) -->
+                            <video
+                                src="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b892dc4e75902a9c7b35a8.mov#t=0.1"
+                                preload="auto" controls playsinline
+                                class="vsl-video w-full h-full object-cover"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MINI TESTIMONIOS SUPERPUESTOS -->
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-6 group cursor-default">
+                    <div class="flex -space-x-3">
+                        <img src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497deadab24ce3f25c33.webp"
+                            alt="Caso de éxito 1"
+                            class="w-11 h-11 md:w-12 md:h-12 rounded-lg border-2 border-[#0a254a] object-cover shadow-lg transform -rotate-6 hover:rotate-0 hover:scale-[1.8] hover:z-50 transition-all duration-300 relative z-10">
+                        <img src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497d2c710869dffb20cb.webp"
+                            alt="Caso de éxito 2"
+                            class="w-11 h-11 md:w-12 md:h-12 rounded-lg border-2 border-[#0a254a] object-cover shadow-lg hover:scale-[1.8] hover:z-50 transition-all duration-300 relative z-20">
+                        <img src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497dedb8a27ce4dea423.webp"
+                            alt="Caso de éxito 3"
+                            class="w-11 h-11 md:w-12 md:h-12 rounded-lg border-2 border-[#0a254a] object-cover shadow-lg transform rotate-6 hover:rotate-0 hover:scale-[1.8] hover:z-50 transition-all duration-300 relative z-30">
+                    </div>
+                    <div class="text-left flex flex-col justify-center">
+                        <div
+                            class="flex text-brand-yellow text-[10px] md:text-xs gap-0.5 group-hover:scale-105 transition-transform origin-left">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xs md:text-sm text-blue-200 font-medium leading-tight mt-0.5">Resultados reales
+                            de estudiantes en LATAM. <br class="hidden md:block"><span class="font-bold text-white">No
+                                es suerte. Es sistema + ejecución.</span></p>
+                    </div>
+                </div>
+
+                <!-- CTA PRINCIPAL (ESCRITORIO Y PIE DE PÁRRAFOS) -->
+                <a href="#oferta"
+                    class="btn-text hidden md:inline-block bg-brand-yellow text-brand-darkBlue font-black text-lg md:text-xl px-8 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto text-center mb-4 hover:bg-yellow-400 group">
+                    [ 👉 EMPIEZA POR EL PROGRAMA ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- LÍNEA DE CONFIANZA CORREGIDA -->
+                <div class="flex flex-col items-center md:items-start gap-3 mt-2">
+                    <p class="text-sm text-blue-200 font-medium">
+                        🔒 Pago 100% seguro • ✅ Garantía de 365 días
+                    </p>
+                    <div class="flex justify-center md:justify-start items-center flex-wrap gap-2 text-blue-100 mt-1">
+                        <div
+                            class="h-6 bg-white flex items-center px-2 rounded-sm select-none text-brand-darkBlue shadow-sm">
+                            <i class="far fa-credit-card text-[14px] mr-1.5"></i>
+                            <span class="font-bold text-[12px] tracking-tight font-sans">Tarjetas</span>
+                        </div>
+                        <div class="h-6 bg-white flex items-center px-1.5 rounded-sm select-none shadow-sm">
+                            <span class="text-[#0082c6] font-black text-[13px] italic tracking-wider">PSE</span>
+                        </div>
+                        <div class="h-6 bg-white flex items-center px-1.5 rounded-sm select-none shadow-sm">
+                            <span class="text-black font-bold text-[14px] tracking-tight font-sans">nequi</span><span
+                                class="text-[#e20bc0] text-[24px] leading-[0] mb-2.5 font-black">.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video derecha (VSL) DESKTOP -->
+            <div class="relative hidden md:flex justify-center items-center h-full mt-12 md:mt-0 z-30">
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-800 opacity-30 blur-3xl rounded-full -z-10">
+                </div>
+                <div class="relative z-10 flex items-center justify-center w-full">
+                    <div
+                        class="relative w-full max-w-[600px] aspect-video video-wrapper rounded-2xl shadow-2xl border-4 border-white/20 bg-brand-darkBlue overflow-hidden transition-all duration-500 ease-out origin-center">
+                        <!-- POSTER CSS PERSONALIZADO (EFECTO BORROSO / GLASSMORPHISM) -->
+                        <div
+                            class="custom-video-poster absolute inset-0 bg-brand-darkBlue/40 backdrop-blur-md flex flex-col items-center justify-center cursor-pointer z-20 transition-opacity duration-300 group">
+                            <div
+                                class="bg-brand-yellow text-brand-darkBlue w-20 h-20 rounded-full flex items-center justify-center text-3xl mb-4 shadow-[0_0_30px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform animate-pulse">
+                                <i class="fas fa-play ml-2"></i>
+                            </div>
+                            <span
+                                class="text-white font-black text-2xl font-heading tracking-wide uppercase text-center px-4 leading-tight drop-shadow-md">
+                                Descubre el sistema<br><span class="text-brand-yellow text-sm">(Haz clic para
+                                    ver)</span>
+                            </span>
+                        </div>
+                        <!-- VIDEO (Enlace viejo con #t=0.1 para forzar primer frame como fondo) -->
+                        <video
+                            src="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b892dc4e75902a9c7b35a8.mov#t=0.1"
+                            preload="auto" controls playsinline class="vsl-video w-full h-full object-cover"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN BLOQUEO (ESPECÍFICA CAOS) -->
+    <section class="py-12 px-4 bg-brand-yellow/10 border-b border-brand-yellow/20 relative">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="bg-brand-yellow text-brand-darkBlue p-6 rounded-2xl shadow-xl transform -rotate-2 shrink-0">
+                <div class="text-sm font-black uppercase tracking-widest mb-1 opacity-80">TU MAYOR BLOQUEO HOY ES:</div>
+                <div class="text-4xl md:text-5xl font-black font-heading leading-tight">CONTROL</div>
+            </div>
+            <div class="text-lg md:text-xl text-brand-darkBlue font-medium leading-relaxed">
+                Sin saber exactamente cuánto entra, cuánto sale y en qué se va, <strong class="text-brand-blue">no puedes corregir, decidir ni avanzar</strong>. 
+                Invertir o ahorrar en este punto no te ayuda: <span class="italic">te frustra</span>.
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN CUERPO DE BLOQUEO -->
+    <section class="py-16 px-4 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                Si sigues así, el próximo mes será igual al anterior, aunque ganes un poco más o te "portes mejor". 
+                <br><br>
+                Tu primer paso no es invertir ni buscar ingresos extra. 
+                <strong class="text-brand-blue">Es instalar un sistema básico de control que ponga reglas a tu dinero.</strong>
+            </p>
+            <a href="#oferta" class="inline-block bg-brand-blue text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-brand-darkBlue transition-all">
+                [ 👉 EMPIEZA POR EL PROGRAMA ]
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN PROBLEMA -->
+    <section class="py-20 px-4 bg-gray-50 border-y border-gray-200 relative">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2
+                class="text-2xl md:text-3xl font-extrabold text-brand-darkBlue mb-4 font-heading uppercase leading-tight">
+                SI TU DINERO SIGUE SIENDO UN DESORDEN, NO NECESITAS MÁS CONSEJOS. NECESITAS UN SISTEMA.
+            </h2>
+            <p class="text-xl text-gray-600 mb-16 font-medium max-w-3xl mx-auto">
+                El problema no es solo que gastes mal. <br>
+                <strong class="text-brand-darkBlue">El problema es que hoy tu dinero sigue sin estructura, sin dirección
+                    y sin control real.</strong>
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10 mb-12">
+                <div
+                    class="bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-lg hover:-translate-y-1 transition-transform duration-300 card-hover border-t-4 border-brand-red">
+                    <div class="text-brand-red text-5xl mb-6"><i class="fas fa-wallet icon-animate"></i></div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-darkBlue font-heading">Trabajas… pero la plata igual
+                        desaparece</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">Ganas dinero, pero no sabes con
+                        claridad por qué nunca te rinde como debería. Entre fugas, gastos impulsivos y mala estructura,
+                        sigues sintiendo que corres pero no avanzas.</p>
+                </div>
+                <div
+                    class="bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-lg hover:-translate-y-1 transition-transform duration-300 card-hover border-t-4 border-brand-blue">
+                    <div class="text-brand-blue text-5xl mb-6"><i class="fas fa-link icon-animate"
+                            style="animation-delay: 0.3s;"></i></div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-darkBlue font-heading">Las deudas te tienen
+                        reaccionando, no construyendo</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">Pagas, resuelves, cubres huecos… pero
+                        no tienes una estrategia real para salir de ahí y dejar de sentir que tu esfuerzo se lo lleva
+                        todo menos tu futuro.</p>
+                </div>
+                <div
+                    class="bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-lg hover:-translate-y-1 transition-transform duration-300 card-hover border-t-4 border-brand-blue">
+                    <div class="text-brand-blue text-5xl mb-6"><i class="fas fa-chart-bar icon-animate"
+                            style="animation-delay: 0.6s;"></i></div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-darkBlue font-heading">Quieres invertir, pero tu base
+                        todavía no inspira confianza</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">Te interesa crecer, sí. Pero si tu
+                        estructura sigue rota, invertir no te va a salvar. Primero necesitas orden, control y criterio.
+                    </p>
+                </div>
+            </div>
+
+            <a href="#oferta"
+                class="btn-text inline-block bg-brand-darkBlue text-brand-yellow font-black text-lg md:text-xl px-10 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto text-center hover:bg-brand-blue group">
+                [ 👉 EMPIEZA POR EL PROGRAMA ] <i
+                    class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN METODOLOGÍA -->
+    <section class="py-20 px-4 bg-brand-darkBlue text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5"
+            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+
+            <div class="flex justify-center mb-6">
+                <div class="relative inline-block max-w-fit">
+                    <h2
+                        class="text-2xl md:text-4xl font-extrabold text-white font-heading relative z-10 uppercase leading-tight">
+                        AQUÍ NO VAS A CONSUMIR CONTENIDO. <br><span class="text-brand-yellow">VAS A INSTALAR UN
+                            SISTEMA.</span>
+                    </h2>
+
+                    <!-- CINTICA DIAGONAL -->
+                    <div
+                        class="absolute -top-5 -right-2 md:-right-8 bg-brand-yellow border-2 border-brand-darkBlue shadow-md transform rotate-3 px-3 py-1.5 flex items-center gap-2 rounded-lg z-0 scale-[0.80] md:scale-100 origin-bottom-right pointer-events-none whitespace-nowrap">
+                        <i class="fas fa-comments text-brand-darkBlue text-[14px] md:text-[16px]"></i>
+                        <span
+                            class="text-brand-darkBlue font-black text-[10px] md:text-[12px] tracking-tight uppercase">Incluye
+                            sección de preguntas y respuestas</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-lg md:text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Porque ver videos no cambia nada. <br>
+                <strong class="text-brand-yellow">Lo que cambia tu vida financiera es tener una estructura que te diga
+                    qué hacer, en qué orden y cómo sostenerlo.</strong>
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left mb-12">
+                <div
+                    class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 h-full hover:bg-white/15 transition-colors">
+                    <i class="fas fa-search-dollar text-brand-yellow text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl text-white mb-2 font-heading">Ves tu realidad sin maquillaje</h4>
+                    <p class="text-sm text-blue-100 leading-snug">Ingresos, gastos, deudas, fugas y compromisos. Lo que
+                        hoy no ves con claridad es exactamente lo que te sigue frenando.</p>
+                </div>
+                <div
+                    class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 h-full hover:bg-white/15 transition-colors">
+                    <i class="fas fa-ruler-combined text-brand-yellow text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl text-white mb-2 font-heading">Le pones reglas a tu dinero</h4>
+                    <p class="text-sm text-blue-100 leading-snug">Tu plata deja de depender de impulsos, sustos, memoria
+                        o ganas. Empieza a obedecer estructura.</p>
+                </div>
+                <div
+                    class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 h-full hover:bg-white/15 transition-colors">
+                    <i class="fas fa-layer-group text-brand-yellow text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl text-white mb-2 font-heading">Construyes base para crecer</h4>
+                    <p class="text-sm text-blue-100 leading-snug">Primero ordenas. Después proteges. Luego das tu primer
+                        paso de inversión y empiezas a mejorar ingresos con más criterio.</p>
+                </div>
+            </div>
+
+            <a href="#oferta"
+                class="btn-text inline-block bg-brand-yellow text-brand-darkBlue font-black text-lg md:text-xl px-10 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto hover:bg-yellow-400 group">
+                [ QUIERO INSTALAR EL SISTEMA ] <i
+                    class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN TEMARIO -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+
+            <div class="text-center mb-12 flex justify-center">
+                <div class="relative inline-block max-w-fit">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-brand-darkBlue font-heading relative z-10 uppercase">
+                        ESTO ES LO QUE VAS A INSTALAR (MÓDULO POR MÓDULO)
+                    </h2>
+                    <!-- CINTICA DIAGONAL -->
+                    <div
+                        class="absolute -top-5 -right-2 md:-right-8 bg-brand-yellow border-2 border-brand-darkBlue shadow-md transform rotate-3 px-3 py-1.5 flex items-center gap-2 rounded-lg z-0 scale-[0.80] md:scale-100 origin-bottom-right pointer-events-none whitespace-nowrap">
+                        <i class="fas fa-comments text-brand-darkBlue text-[14px] md:text-[16px]"></i>
+                        <span
+                            class="text-brand-darkBlue font-black text-[10px] md:text-[12px] tracking-tight uppercase">Incluye
+                            sección de preguntas y respuestas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4 font-heading mb-12">
+                <!-- Módulos -->
+                <div
+                    class="border border-brand-blue rounded-lg overflow-hidden shadow-md transition-shadow hover:shadow-lg">
+                    <button
+                        class="accordion-header active w-full flex justify-between items-center bg-brand-blue p-5 md:p-6 text-left font-bold text-white transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-white/20 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">1</span>
+                            Módulo 1: Tu Radiografía Financiera
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon active text-white shrink-0"></i>
+                    </button>
+                    <div class="accordion-content active bg-gray-50" style="max-height: 500px; opacity: 1;">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Vas a ver tu situación como realmente está: ingresos, gastos, compromisos y deudas. Aquí
+                            dejas de adivinar y empiezas a entender.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">2</span>
+                            Módulo 2: Mentalidad y decisiones financieras
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Vas a trabajar identidad financiera, creencias y hábitos que hoy siguen frenando tu avance.
+                            Objetivos reales, cero fantasías.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">3</span>
+                            Módulo 3: El Plan Anti-Deuda
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Construyes una estrategia clara para ordenar, priorizar y atacar tus deudas sin seguir
+                            apagando incendios.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">4</span>
+                            Módulo 4: Tu Sistema Financiero
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Instalas estructura, reglas, control y protección para que tu dinero deje de depender del
+                            momento, la memoria o el desorden.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">5</span>
+                            Módulo 5: Tus Primeras Inversiones
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Aprendes cuándo sí estás listo para invertir, cómo entender el riesgo real y cómo dar tu
+                            primer paso en opciones como cuentas de alto rendimiento, CDTs, fiducuentas, bolsa y cripto
+                            sin entrar a ciegas.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">6</span>
+                            Módulo 6: Aumenta tus Ingresos
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Aprendes rutas realistas para mejorar tus ingresos en LATAM y dejar de depender solo de
+                            apretar el presupuesto para respirar.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acompañamiento -->
+                <div
+                    class="border-2 border-brand-yellow rounded-xl overflow-hidden shadow-lg transition-shadow hover:shadow-xl relative mt-4">
+                    <div
+                        class="absolute top-0 right-0 bg-brand-yellow text-brand-darkBlue text-[10px] md:text-xs font-bold px-3 py-1 rounded-bl-lg z-10 uppercase tracking-wider shadow-sm">
+                        Soporte Directo</div>
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-yellow-50/50 p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-yellow-100 transition-colors relative z-20">
+                        <span class="text-lg md:text-xl flex items-center mt-2 md:mt-0">
+                            <i class="fas fa-comments text-brand-darkYellow mr-3 text-2xl"></i>
+                            Sección de Preguntas y Respuestas conmigo
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-brand-darkYellow shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-white">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-yellow-200 font-sans">
+                            Tendrás una sección de preguntas y respuestas dentro de la plataforma, atendida directamente
+                            por mí, para resolver dudas puntuales mientras avanzas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#oferta"
+                    class="btn-text inline-block bg-brand-darkBlue text-brand-yellow font-black text-lg px-10 py-5 rounded-xl shadow-lg transition-all w-full md:w-auto hover:bg-brand-blue group">
+                    [ 👉 EMPIEZA POR EL PROGRAMA ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN CUALIFICACIÓN -->
+    <section class="py-20 px-4 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-darkBlue font-heading uppercase">
+                    ESTE CURSO NO ES PARA TODO EL MUNDO
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+
+                <!-- Para quién SÍ es -->
+                <div
+                    class="bg-white rounded-3xl p-8 md:p-10 shadow-lg border-t-8 border-brand-green relative hover:shadow-xl transition-shadow">
+                    <div
+                        class="absolute top-0 right-8 transform -translate-y-1/2 bg-brand-green text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-md">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-darkBlue font-heading mb-6">SÍ ES PARA TI SI...</h3>
+                    <ul class="space-y-5 text-gray-700 font-medium">
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>estás cansado de improvisar con tu dinero</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>te duele ver que trabajas y aun así no construyes</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>quieres una ruta clara, no más consejos sueltos</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>estás listo para revisar tu realidad sin excusas</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>entiendes que seguir igual te está costando demasiado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Para quién NO es -->
+                <div
+                    class="bg-white rounded-3xl p-8 md:p-10 shadow-lg border-t-8 border-brand-red relative hover:shadow-xl transition-shadow">
+                    <div
+                        class="absolute top-0 right-8 transform -translate-y-1/2 bg-brand-red text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-md">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-darkBlue font-heading mb-6">NO ES PARA TI SI...</h3>
+                    <ul class="space-y-5 text-gray-700 font-medium">
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-times-circle text-brand-red mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>buscas una fórmula mágica</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-times-circle text-brand-red mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>no quieres mirar tus números reales</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-times-circle text-brand-red mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>quieres invertir sin construir base primero</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-times-circle text-brand-red mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>solo quieres motivación vacía</span>
+                        </li>
+                        <li class="flex items-start group">
+                            <i
+                                class="fas fa-times-circle text-brand-red mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>no estás dispuesto a ejecutar</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- BOTÓN CTA -->
+            <div class="text-center mt-12">
+                <a href="#oferta"
+                    class="btn-text inline-block bg-brand-darkBlue text-brand-yellow font-black text-lg md:text-xl px-10 py-5 rounded-xl shadow-lg transition-all w-full md:w-auto hover:bg-brand-blue group">
+                    [ CUMPLO EL PERFIL. QUIERO ENTRAR ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECCIÓN AUTORIDAD -->
+    <section class="bg-white py-20 px-4 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3 relative">
+                <div class="absolute inset-0 bg-brand-yellow transform translate-x-3 translate-y-3 rounded-xl -z-0">
+                </div>
+                <img src="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b89e483e6072835d4f62be.png"
+                    alt="Diego Tobón"
+                    class="relative z-10 rounded-xl shadow-2xl w-full border-4 border-white object-cover grayscale-[30%]">
+            </div>
+            <div class="md:w-2/3 font-medium text-center md:text-left">
+                <h4 class="text-brand-blue font-bold uppercase tracking-widest mb-3 text-sm font-heading">Tu Instructor
+                </h4>
+                <h2
+                    class="text-3xl md:text-4xl font-extrabold mb-6 font-heading text-brand-darkBlue uppercase leading-tight">
+                    SOY DIEGO TOBÓN. Y ESTE CURSO EXISTE PORQUE SÉ LO QUE PASA CUANDO EL DINERO NO TIENE SISTEMA.</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed text-lg">
+                    No construí este programa para entretenerte ni para hacerte sentir bien cinco minutos. Lo construí
+                    para darte una estructura que te ayude a dejar el desorden, tomar control y empezar a construir con
+                    lógica.
+                </p>
+                <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                    Está pensado para personas de LATAM que están cansadas de vivir reaccionando y necesitan algo más
+                    útil que frases bonitas: un sistema aplicable para ordenar, enfrentar deudas y empezar a invertir
+                    con criterio.
+                </p>
+                <div class="border-l-4 border-brand-yellow pl-4 mb-8 bg-gray-50 py-3 pr-3 rounded-r-lg">
+                    <p class="text-brand-darkBlue font-bold leading-relaxed text-lg italic">
+                        "Mi trabajo no es endulzarte la realidad. Es ayudarte a dejar de improvisar con tu dinero."
+                    </p>
+                </div>
+                <a href="#oferta"
+                    class="btn-text inline-block bg-brand-darkBlue text-brand-yellow font-black text-lg px-8 py-4 rounded-xl btn-shadow transition-all hover:bg-brand-blue group">
+                    [ QUIERO APRENDER CON ESTE SISTEMA ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SECCIÓN TESTIMONIOS (SLIDER) -->
+    <section class="py-20 px-4 bg-gray-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto relative group">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-darkBlue font-heading uppercase">RESULTADOS DE
+                    PERSONAS QUE DEJARON DE IMPROVISAR</h2>
+                <p class="text-xl text-gray-600 mt-4 font-medium">Aquí no hay humo. Hay personas reales que decidieron
+                    ordenar su vida financiera y empezar a construir mejor.</p>
+            </div>
+
+            <!-- Contenedor con w-full para evitar desplazamiento a la derecha -->
+            <div class="w-full overflow-hidden" id="slider-container">
+                <div id="slider-track" class="w-full flex transition-transform duration-500 ease-out">
+                    <!-- Testimonios -->
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497deadab24ce3f25c33.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497d2c710869dffb20cb.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497dedb8a27ce4dea423.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497d0e50f270e18dbb07.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497deadab257a0f25c35.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497d035c3aae6ceaadf8.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img src="img/Testimonio 7.png"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"
+                            onerror="this.src='https://placehold.co/1060x1032/png?text=Testimonio+7'"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497d9e7c1342491591f7.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/69544b06ec06c560b7b1e414.webp"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                    <div class="w-full md:w-1/3 flex-shrink-0 p-3"><img
+                            src="https://placehold.co/1060x1032/png?text=Testimonio+10"
+                            class="w-full rounded-xl shadow-lg hover:shadow-2xl transition"></div>
+                </div>
+            </div>
+
+            <!-- Botones ajustados -->
+            <button id="prevBtn"
+                class="absolute top-1/2 left-0 md:left-0 ml-2 md:ml-[-10px] -translate-y-1/2 bg-brand-yellow text-brand-darkBlue p-3 rounded-full shadow-lg hover:bg-yellow-400 focus:outline-none z-10 transition-transform hover:scale-110">
+                <i class="fas fa-chevron-left text-xl"></i>
+            </button>
+            <button id="nextBtn"
+                class="absolute top-1/2 right-0 md:right-0 mr-2 md:mr-[-10px] -translate-y-1/2 bg-brand-yellow text-brand-darkBlue p-3 rounded-full shadow-lg hover:bg-yellow-400 focus:outline-none z-10 transition-transform hover:scale-110">
+                <i class="fas fa-chevron-right text-xl"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- 8. BONOS -->
+    <section class="bg-blue-600 py-20 px-4 text-white relative overflow-hidden">
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10 text-center md:text-left">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold font-heading mb-4">BONOS INCLUIDOS (SIN COSTO ADICIONAL)</h2>
+                <p class="text-xl text-blue-100 font-medium">Además del curso, recibes estos recursos para ejecutar más
+                    rápido y cometer menos errores.</p>
+            </div>
+
+            <div class="grid gap-6 mb-12">
+                <!-- Bono 1 -->
+                <div
+                    class="bg-blue-700/60 p-6 rounded-2xl flex flex-col md:flex-row items-center border border-blue-500/50 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-1">
+                    <div
+                        class="bg-brand-yellow text-brand-darkBlue p-4 rounded-full mb-4 md:mb-0 md:mr-6 shrink-0 shadow-lg">
+                        <i class="fas fa-file-invoice-dollar text-3xl icon-animate"></i>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h4 class="font-bold text-xl text-brand-yellow mb-2 font-heading">BONO #1: Guía de Compra
+                            Inteligente</h4>
+                        <p class="text-blue-100 leading-relaxed">Para que dejes de tomar decisiones de consumo que
+                            parecen pequeñas, pero terminan reventando tu sistema financiero.</p>
+                    </div>
+                    <div
+                        class="text-center md:text-right shrink-0 mt-4 md:mt-0 md:ml-6 flex flex-col items-center md:items-end justify-center">
+                        <span
+                            class="text-red-300 font-bold text-sm md:text-base line-through decoration-red-400 decoration-2 mb-1 tracking-wide">Valor:
+                            $47.000 COP</span>
+                        <div class="font-extrabold text-brand-yellow text-xl md:text-2xl font-heading">INCLUIDO</div>
+                    </div>
+                </div>
+                <!-- Bono 2 -->
+                <div
+                    class="bg-blue-700/60 p-6 rounded-2xl flex flex-col md:flex-row items-center border border-blue-500/50 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-1">
+                    <div
+                        class="bg-brand-yellow text-brand-darkBlue p-4 rounded-full mb-4 md:mb-0 md:mr-6 shrink-0 shadow-lg">
+                        <i class="fas fa-comments text-3xl icon-animate" style="animation-delay: 0.3s;"></i>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h4 class="font-bold text-xl text-brand-yellow mb-2 font-heading">BONO #2: Sección de Preguntas
+                            y Respuestas con Diego</h4>
+                        <p class="text-blue-100 leading-relaxed">Un espacio directo en la plataforma para resolver dudas
+                            puntuales y ayudarte a aterrizar mejor el proceso.</p>
+                    </div>
+                    <div
+                        class="text-center md:text-right shrink-0 mt-4 md:mt-0 md:ml-6 flex flex-col items-center md:items-end justify-center">
+                        <span
+                            class="text-red-300 font-bold text-sm md:text-base line-through decoration-red-400 decoration-2 mb-1 tracking-wide">Valor:
+                            $97.000 COP</span>
+                        <div class="font-extrabold text-brand-yellow text-xl md:text-2xl font-heading">INCLUIDO</div>
+                    </div>
+                </div>
+                <!-- Bono 3 -->
+                <div
+                    class="bg-blue-700/60 p-6 rounded-2xl flex flex-col md:flex-row items-center border border-blue-500/50 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-1">
+                    <div
+                        class="bg-brand-yellow text-brand-darkBlue p-4 rounded-full mb-4 md:mb-0 md:mr-6 shrink-0 shadow-lg">
+                        <i class="fas fa-rocket text-3xl icon-animate" style="animation-delay: 0.6s;"></i>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h4 class="font-bold text-xl text-brand-yellow mb-2 font-heading">BONO #3: Protocolo "Ejecución
+                            Radical"</h4>
+                        <p class="text-blue-100 leading-relaxed">Porque saber qué hacer no sirve de nada si sigues
+                            aplazándolo. Aquí tienes una estructura para ejecutar.</p>
+                    </div>
+                    <div
+                        class="text-center md:text-right shrink-0 mt-4 md:mt-0 md:ml-6 flex flex-col items-center md:items-end justify-center">
+                        <span
+                            class="text-red-300 font-bold text-sm md:text-base line-through decoration-red-400 decoration-2 mb-1 tracking-wide">Valor:
+                            $57.000 COP</span>
+                        <div class="font-extrabold text-brand-yellow text-xl md:text-2xl font-heading">INCLUIDO</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#oferta"
+                    class="btn-text inline-block bg-brand-yellow text-brand-darkBlue font-black text-xl px-10 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto hover:bg-yellow-400 group">
+                    [ 👉 EMPIEZA POR EL PROGRAMA ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. OFERTA -->
+    <section id="oferta" class="py-24 px-4 bg-gray-100 relative">
+        <div class="max-w-2xl mx-auto">
+            <div
+                class="bg-white rounded-3xl shadow-2xl border-4 border-blue-100 overflow-hidden relative transform transition-transform duration-300 hover:shadow-[0_20px_50px_rgba(15,60,122,0.15)]">
+                <div
+                    class="absolute top-0 right-0 bg-brand-green text-white text-sm md:text-base font-extrabold px-6 py-2 rounded-bl-2xl z-10 shadow-md font-heading">
+                    <i class="fas fa-unlock-alt mr-1"></i> ACCESO INMEDIATO
+                </div>
+
+                <div class="p-8 md:p-12 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="relative inline-block max-w-fit">
+                            <h2
+                                class="text-xl md:text-2xl font-bold text-brand-darkBlue font-heading relative z-10 uppercase">
+                                INSCRIPCIÓN AL CURSO</h2>
+
+                            <!-- Cinta -->
+                            <div
+                                class="absolute -top-5 -right-10 md:-right-24 bg-brand-yellow border-2 border-brand-darkBlue shadow-md transform rotate-3 px-3 py-1.5 flex items-center gap-2 rounded-lg z-0 scale-[0.75] md:scale-100 origin-bottom-right pointer-events-none whitespace-nowrap">
+                                <i class="fas fa-comments text-brand-darkBlue text-[14px] md:text-[16px]"></i>
+                                <span
+                                    class="text-brand-darkBlue font-black text-[10px] md:text-[12px] tracking-tight uppercase">Incluye
+                                    sección de preguntas y respuestas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto -->
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4 font-heading">"Del Caos
+                        Financiero a tu Primera Inversión"</h3>
+                    <p class="text-gray-500 font-medium mb-8">El sistema completo para ordenar tu dinero, dejar el
+                        desorden, crear una estrategia frente a tus deudas y dar tu primer paso de inversión con
+                        criterio.</p>
+
+                    <!-- Bullets -->
+                    <ul class="text-left space-y-4 mb-10 text-gray-700 max-w-md mx-auto font-medium">
+                        <li class="flex items-start group"><i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>Acceso completo al curso (6 módulos en video).</span></li>
+                        <li
+                            class="flex items-start bg-yellow-50 p-3 rounded-lg -ml-3 group border border-yellow-100 shadow-sm">
+                            <i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span><strong>Sección de preguntas y respuestas atendida directamente por
+                                    mí.</strong></span></li>
+                        <li class="flex items-start group"><i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>Plantillas y herramientas descargables.</span></li>
+                        <li class="flex items-start group"><i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>Bono 1: Guía de Compra Inteligente.</span></li>
+                        <li class="flex items-start group"><i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>Bono 2: Sección de Preguntas y Respuestas.</span></li>
+                        <li class="flex items-start group"><i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>Bono 3: Protocolo Productividad.</span></li>
+                        <li class="flex items-start group"><i
+                                class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i>
+                            <span>Acceso y actualizaciones por 1 año.</span></li>
+                    </ul>
+
+                    <!-- BLOQUE DE OFERTA OPTIMIZADO -->
+                    <div class="mb-8 pb-8 border-b border-gray-200">
+                        <div class="flex flex-col items-center justify-center mb-3">
+                            <span
+                                class="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">Valor
+                                Total (Programa + Bonos + Q&A):</span>
+                            <span
+                                class="text-2xl md:text-3xl font-bold text-red-500 line-through decoration-red-500/70 decoration-3">
+                                $900.000 COP
+                            </span>
+                        </div>
+
+                        <div class="text-sm text-brand-green font-black uppercase tracking-widest mb-2 mt-2">Tu única
+                            inversión HOY:</div>
+                        <div
+                            class="text-5xl md:text-7xl font-extrabold text-brand-darkBlue font-heading leading-none relative inline-block">
+                            $397.000 <span class="text-2xl md:text-3xl font-bold text-gray-500">COP</span>
+                            <div
+                                class="absolute -top-4 -right-8 md:-right-10 bg-brand-green text-white text-[11px] md:text-xs font-black px-2 py-1 rounded-full transform rotate-12 shadow-sm animate-pulse">
+                                -56% OFF
+                            </div>
+                        </div>
+
+                        <div class="mt-5 inline-block bg-green-50 border border-green-200 rounded-lg px-4 py-2">
+                            <p class="text-sm text-brand-green font-bold uppercase tracking-wide">
+                                <i class="fas fa-check-circle mr-1"></i> Pago único • Acceso inmediato
+                            </p>
+                        </div>
+                    </div>
+
+                    <a id="boton-checkout-wompi" href="https://checkout.wompi.co/l/wHeAmR"
+                        onclick="if(typeof fbq === 'function') { fbq('track', 'InitiateCheckout', {value: 397000, currency: 'COP'}); }"
+                        class="btn-text flex flex-col justify-center items-center gap-1 w-full bg-brand-yellow text-brand-darkBlue font-black py-4 md:py-5 rounded-xl btn-shadow transition-all mb-3 leading-tight hover:bg-yellow-400 group relative overflow-hidden">
+                        <span class="text-xl md:text-2xl relative z-10">[ SÍ, QUIERO ENTRAR AL CURSO HOY ]</span>
+                        <span class="text-xs md:text-sm font-bold opacity-80 relative z-10">Desbloquear mi acceso y
+                            bonos ⚡</span>
+                    </a>
+
+                    <p class="text-xs text-center text-gray-500 font-medium mb-6">
+                        <i class="fas fa-lock text-brand-green"></i> Serás redirigido de forma segura a <strong
+                            class="text-blue-700">Wompi (Respaldo Bancolombia)</strong>.
+                    </p>
+
+                    <div class="flex justify-center items-center flex-wrap gap-4 opacity-70 mt-6">
+                        <div
+                            class="h-8 bg-gray-50 border border-gray-200 flex items-center px-3 rounded-md select-none text-brand-darkBlue">
+                            <i class="far fa-credit-card text-lg mr-2"></i>
+                            <span class="font-bold text-sm tracking-tight font-sans">Tarjetas</span>
+                        </div>
+                        <div
+                            class="h-8 bg-gray-50 border border-gray-200 flex items-center px-3 rounded-md select-none">
+                            <span class="text-[#0082c6] font-black text-sm italic tracking-wider">PSE</span>
+                        </div>
+                        <div
+                            class="h-8 bg-gray-50 border border-gray-200 flex items-center px-3 rounded-md select-none">
+                            <span class="text-black font-bold text-base tracking-tight font-sans">nequi</span><span
+                                class="text-[#e20bc0] text-3xl leading-[0] mb-3 font-black">.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. GARANTÍA Y FAQ (TEXTOS CORREGIDOS) -->
+    <section class="py-20 px-4 bg-white border-t border-gray-200">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- Garantía -->
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 mb-20 p-8 border-3 border-dashed border-gray-300 rounded-2xl bg-gray-50 text-center md:text-left shadow-sm hover:shadow-md transition-shadow">
+                <div class="shrink-0">
+                    <img src="https://cdn-icons-png.flaticon.com/512/411/411763.png" alt="Garantía de Satisfacción"
+                        class="w-32 h-32 object-contain drop-shadow-md">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-extrabold text-brand-darkBlue mb-3 font-heading uppercase">ENTRA Y PRUÉBALO
+                        SIN MIEDO (GARANTÍA DE 365 DÍAS)</h3>
+                    <p class="text-base text-gray-700 leading-relaxed font-medium">
+                        Tienes <strong>365 días</strong> para entrar, ver las clases y aplicar el sistema con calma. Si
+                        demuestras que aplicaste todos los lineamientos paso a paso y aún así no lograste un cambio en
+                        tus finanzas, revisamos tu caso y te aplicamos la garantía de devolución. Cero riesgos para ti.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-brand-darkBlue mb-12 font-heading">Preguntas
+                Frecuentes</h2>
+
+            <div class="space-y-4 font-heading mb-12">
+                <!-- Pregunta 1 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center p-6 text-left font-bold text-brand-darkBlue bg-white hover:bg-gray-50 transition-colors">
+                        <span class="text-lg">¿Cuándo inicia el curso?</span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div class="p-6 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Entras de inmediato. Recibes acceso por correo y avanzas a tu ritmo. La idea no es solo ver
+                            videos: es ejecutar el proceso paso a paso.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pregunta 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center p-6 text-left font-bold text-brand-darkBlue bg-white hover:bg-gray-50 transition-colors">
+                        <span class="text-lg">¿Qué necesito para aprovecharlo?</span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div class="p-6 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Honestidad brutal, disposición para mirar tus números y compromiso real con aplicar el
+                            sistema.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pregunta 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center p-6 text-left font-bold text-brand-darkBlue bg-white hover:bg-gray-50 transition-colors">
+                        <span class="text-lg">¿Necesito mucho dinero para empezar?</span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div class="p-6 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            No. Justamente el curso te ayuda a ordenar tu realidad actual y a encontrar claridad antes
+                            de pensar en crecer.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pregunta 4 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center p-6 text-left font-bold text-brand-darkBlue bg-white hover:bg-gray-50 transition-colors">
+                        <span class="text-lg">¿Sirve si estoy muy endeudado?</span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div class="p-6 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Sí. El módulo 3 está pensado para darte estructura y estrategia frente a las deudas.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pregunta 5 -->
+                <div class="border border-brand-yellow rounded-lg overflow-hidden shadow-md mt-4">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center p-6 text-left font-bold text-brand-darkBlue bg-yellow-50 hover:bg-yellow-100 transition-colors">
+                        <span class="text-lg flex items-center">
+                            <i class="fas fa-comments text-brand-darkYellow mr-3 text-xl"></i> ¿Tendré acompañamiento
+                            durante el curso?
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-brand-darkYellow"></i>
+                    </button>
+                    <div class="accordion-content bg-white">
+                        <div class="p-6 text-gray-700 text-base leading-relaxed border-t border-yellow-200 font-sans">
+                            Sí. Tendrás acceso a una sección de preguntas y respuestas dentro de la plataforma, atendida
+                            directamente por mí, para resolver dudas puntuales mientras avanzas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Final -->
+            <div class="text-center mt-12">
+                <a href="https://checkout.wompi.co/l/wHeAmR"
+                    onclick="if(typeof fbq === 'function') { fbq('track', 'InitiateCheckout', {value: 397000, currency: 'COP'}); }"
+                    class="btn-text inline-block bg-brand-darkBlue text-white font-black text-xl md:text-2xl px-10 py-5 rounded-xl shadow-lg transition-all w-full md:w-auto hover:bg-brand-blue group">
+                    [ 👉 EMPIEZA POR EL PROGRAMA ] <i
+                        class="fas fa-arrow-up ml-2 group-hover:-translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER MINIMALISTA SIN ENLACES -->
+    <footer class="bg-[#050f20] text-gray-400 py-12 text-center text-sm font-medium border-t-4 border-brand-yellow">
+        <p class="mb-4">&copy; 2026 Inversiones FCD S.A.S. Todos los derechos reservados.</p>
+        <p class="mb-6 max-w-md mx-auto opacity-70">Este sitio no es parte del sitio web de Facebook o Facebook Inc.
+            Además, este sitio NO está respaldado por Facebook de ninguna manera.</p>
+        <div class="space-x-6">
+            <a href="#" class="hover:text-white transition underline">Política de Privacidad</a>
+            <a href="#" class="hover:text-white transition underline">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+            (function () {
+                function initApp() {
+                    // --- LÓGICA DEL POSTER CSS PERSONALIZADO ---
+                    const videoWrappers = document.querySelectorAll('.video-wrapper');
+                    videoWrappers.forEach(wrapper => {
+                        const poster = wrapper.querySelector('.custom-video-poster');
+                        const video = wrapper.querySelector('video');
+
+                        if (poster && video) {
+                            // Ocultar poster y reproducir al hacer clic
+                            poster.addEventListener('click', () => {
+                                video.play(); // Ejecución inmediata para evitar bloqueos en iOS/Safari
+                                poster.style.opacity = '0';
+                                setTimeout(() => {
+                                    poster.style.display = 'none';
+                                }, 300); // 300ms es el tiempo que dura la transición de opacidad
+                            });
+
+                            // Si el usuario reproduce usando controles nativos (garantía de UX)
+                            video.addEventListener('play', () => {
+                                if (poster.style.display !== 'none') {
+                                    poster.style.opacity = '0';
+                                    setTimeout(() => poster.style.display = 'none', 300);
+                                }
+                            });
+                        }
+                    });
+
+                    // --- EFECTO VIDEO VSL EN MÓVIL Y PC ---
+                    const vslVideos = document.querySelectorAll('.vsl-video');
+                    vslVideos.forEach(video => {
+                        // Seleccionamos el contenedor padre para que todo se expanda
+                        const wrapper = video.closest('.video-wrapper') || video;
+
+                        video.addEventListener('play', () => {
+                            wrapper.classList.add('video-expanded');
+                            // Pausar el otro video si se da play en uno
+                            vslVideos.forEach(otherVideo => {
+                                if (otherVideo !== video) otherVideo.pause();
+                            });
+                        });
+                        video.addEventListener('pause', () => {
+                            wrapper.classList.remove('video-expanded');
+                        });
+                        video.addEventListener('ended', () => {
+                            wrapper.classList.remove('video-expanded');
+                        });
+                    });
+
+                    // --- ACORDEÓN ---
+                    const accordions = document.querySelectorAll('.accordion-header');
+                    if (accordions.length > 0) {
+                        accordions.forEach(button => {
+                            // Clonar para evitar listeners duplicados
+                            const newButton = button.cloneNode(true);
+                            button.parentNode.replaceChild(newButton, button);
+
+                            newButton.addEventListener('click', () => {
+                                const content = newButton.nextElementSibling;
+                                const icon = newButton.querySelector('.rotate-icon');
+
+                                // Alternar actual
+                                newButton.classList.toggle('active');
+                                if (icon) icon.classList.toggle('active');
+                                if (content) content.classList.toggle('active');
+
+                                // Estilos
+                                if (newButton.classList.contains('active')) {
+                                    // Diferenciar si es el acordeón amarillo (soporte)
+                                    if (newButton.classList.contains('bg-white')) {
+                                        newButton.classList.remove('bg-white', 'text-brand-darkBlue', 'hover:bg-gray-50');
+                                        newButton.classList.add('bg-brand-blue', 'text-white');
+                                        if (icon) {
+                                            icon.classList.remove('text-gray-400');
+                                            icon.classList.add('text-white');
+                                        }
+                                        newButton.parentElement.classList.remove('border-gray-200', 'shadow-sm');
+                                        newButton.parentElement.classList.add('border-brand-blue', 'shadow-md');
+                                    }
+                                    if (content) {
+                                        content.style.maxHeight = content.scrollHeight + "px";
+                                        content.style.opacity = "1";
+                                    }
+                                } else {
+                                    if (newButton.classList.contains('bg-brand-blue')) {
+                                        newButton.classList.add('bg-white', 'text-brand-darkBlue', 'hover:bg-gray-50');
+                                        newButton.classList.remove('bg-brand-blue', 'text-white');
+                                        if (icon) {
+                                            icon.classList.add('text-gray-400');
+                                            icon.classList.remove('text-white');
+                                        }
+                                        newButton.parentElement.classList.add('border-gray-200', 'shadow-sm');
+                                        newButton.parentElement.classList.remove('border-brand-blue', 'shadow-md');
+                                    }
+                                    if (content) {
+                                        content.style.maxHeight = null;
+                                        content.style.opacity = "0";
+                                    }
+                                }
+                            });
+                        });
+                    }
+
+                    // --- SLIDER TESTIMONIOS ---
+                    const sliderTrack = document.getElementById('slider-track');
+                    const prevBtn = document.getElementById('prevBtn');
+                    const nextBtn = document.getElementById('nextBtn');
+
+                    if (sliderTrack && prevBtn && nextBtn) {
+                        // Clonar botones para limpiar eventos previos
+                        const newPrevBtn = prevBtn.cloneNode(true);
+                        const newNextBtn = nextBtn.cloneNode(true);
+                        prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
+                        nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+
+                        let currentIndex = 0;
+                        const totalItems = 10;
+
+                        function getItemsToShow() {
+                            return window.innerWidth >= 768 ? 3 : 1;
+                        }
+
+                        function updateSlider() {
+                            const itemsToShow = getItemsToShow();
+                            const itemWidth = 100 / itemsToShow;
+                            sliderTrack.style.transform = `translateX(-${currentIndex * itemWidth}%)`;
+                        }
+
+                        newNextBtn.addEventListener('click', () => {
+                            const itemsToShow = getItemsToShow();
+                            if (currentIndex < totalItems - itemsToShow) {
+                                currentIndex++;
+                            } else {
+                                currentIndex = 0;
+                            }
+                            updateSlider();
+                        });
+
+                        newPrevBtn.addEventListener('click', () => {
+                            const itemsToShow = getItemsToShow();
+                            if (currentIndex > 0) {
+                                currentIndex--;
+                            } else {
+                                currentIndex = totalItems - itemsToShow;
+                            }
+                            updateSlider();
+                        });
+
+                        window.addEventListener('resize', () => {
+                            const itemsToShow = getItemsToShow();
+                            if (currentIndex > totalItems - itemsToShow) {
+                                currentIndex = Math.max(0, totalItems - itemsToShow);
+                            }
+                            updateSlider();
+                        });
+                    }
+                }
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initApp);
+                } else {
+                    initApp();
+                }
+
+                window.addEventListener('load', initApp);
+            })();
+    </script>
+</body>
+
+</html>
