@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Etiquetas SEO y Open Graph Optimizadas -->
+    <title>Tu etapa actual: Orden Financiero | Diego Tobón</title>
+    <meta name="description"
+        content="Ya hiciste lo que muchos nunca logran: tienes control y presupuesto. Pero el orden solo no crea patrimonio. Blindar tu sistema es el siguiente paso.">
+
+    <!-- Open Graph para compartir en WhatsApp/Redes -->
+    <meta property="og:title" content="Tu etapa actual: Orden Financiero">
+    <meta property="og:description"
+        content="Tienes orden, pero aún no construyes tranquilidad real. Es hora de blindar tu sistema con ahorro y protección.">
+    <meta property="og:image"
+        content="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b89e483e6072835d4f62be.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="URL_DE_TU_LOGO_AQUI.png">
+
+    <!-- Scripts y Estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0f3c7a',
+                            darkBlue: '#0a254a',
+                            yellow: '#fbbf24',
+                            darkYellow: '#f59e0b',
+                            light: '#f3f4f6',
+                            green: '#22c55e',
+                            red: '#ef4444'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Sombras y efectos de botones */
+        .btn-shadow {
+            box-shadow: 0 4px 0 #b45309;
+            transition: all 0.2s ease;
+        }
+
+        .btn-shadow:hover {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #b45309;
+        }
+
+        .btn-shadow:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #b45309;
+        }
+
+        /* Acordeón */
+        .accordion-content {
+            transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.active {
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        .rotate-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .rotate-icon.active {
+            transform: rotate(180deg);
+        }
+
+        /* Efecto Hover Tarjetas */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Animación Flotante */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .icon-animate {
+            display: inline-block !important;
+            animation: float 3s ease-in-out infinite !important;
+        }
+
+        /* EFECTO VSL EXPANDIDO (MÓVIL Y PC) */
+        .video-expanded {
+            box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.9) !important;
+            z-index: 50 !important;
+            position: relative;
+        }
+
+        @media (max-width: 767px) {
+            .video-expanded {
+                transform: scale(1.12) translateY(-15px);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .video-expanded {
+                /* Crece un 25% y se mueve a la izquierda para superponerse al texto elegantemente */
+                transform: scale(1.25) translateX(-8%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- 1. BANDERILLA DE DIAGNÓSTICO -->
+    <div class="bg-red-600 text-white py-2 px-4 text-center text-xs md:text-sm font-bold tracking-wide uppercase shadow-md relative z-50">
+        ⚠️ RESULTADO DE TU DIAGNÓSTICO: ETAPA DE ORDEN FINANCIERO
+    </div>
+
+    <!-- 2. SECCIÓN HERO -->
+    <header class="bg-brand-darkBlue text-white pb-20 pt-16 px-4 overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue rounded-full filter blur-[120px] opacity-40 translate-x-1/2 -translate-y-1/4">
+        </div>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 md:gap-16 items-center relative z-10">
+
+            <!-- Texto izquierdo -->
+            <div class="text-center md:text-left">
+                <span
+                    class="inline-block bg-brand-yellow text-brand-darkBlue font-extrabold px-4 py-1.5 rounded-full text-xs md:text-sm mb-6 tracking-wide shadow-sm uppercase">
+                    TU DIAGNÓSTICO: TIENES ORDEN, PERO AÚN NO CONSTRUYES
+                </span>
+
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 font-heading">
+                    Tu etapa actual: <br>
+                    <span class="text-brand-yellow font-black">ORDEN FINANCIERO</span>
+                </h1>
+
+                <p class="text-lg md:text-xl text-blue-100 mb-4 leading-relaxed font-medium">
+                    Ya hiciste lo que muchos nunca logran: <strong class="text-white">tienes control, presupuesto y decisiones más conscientes</strong>. 
+                </p>
+                <p class="text-base text-gray-300 mb-6 font-medium leading-relaxed">
+                    Pero el orden por sí solo no crea tranquilidad ni patrimonio si no está protegido con ahorro real. <br>
+                    <strong class="text-white text-lg">Es el momento de convertir el control en protección.</strong>
+                </p>
+
+                <!-- NUEVO BOTÓN EXCLUSIVO MÓVIL (ANTES DEL VIDEO) -->
+                <a href="#oferta"
+                    class="btn-text flex md:hidden justify-center items-center bg-brand-yellow text-brand-darkBlue font-black text-lg px-6 py-4 rounded-xl btn-shadow transition-all w-full text-center mb-8 hover:bg-yellow-400 group leading-tight">
+                    [ 👉 Entra a "Del Caos Financiero a tu Primera Inversión" ]
+                </a>
+
+                <!-- VIDEO (VERSIÓN MÓVIL) -->
+                <div class="relative flex md:hidden justify-center items-center w-full mb-8 z-30">
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-800 opacity-30 blur-3xl rounded-full -z-10">
+                    </div>
+                    <div class="relative z-10 flex items-center justify-center w-full">
+                        <div
+                            class="relative w-full aspect-video video-wrapper rounded-2xl shadow-2xl border-4 border-white/20 bg-brand-darkBlue overflow-hidden transition-all duration-500 ease-out origin-center">
+                            <!-- POSTER CSS PERSONALIZADO (EFECTO BORROSO / GLASSMORPHISM) -->
+                            <div
+                                class="custom-video-poster absolute inset-0 bg-brand-darkBlue/40 backdrop-blur-md flex flex-col items-center justify-center cursor-pointer z-20 transition-opacity duration-300">
+                                <div
+                                    class="bg-brand-yellow text-brand-darkBlue w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-3 shadow-[0_0_20px_rgba(251,191,36,0.6)] animate-pulse">
+                                    <i class="fas fa-play ml-1"></i>
+                                </div>
+                                <span
+                                    class="text-white font-black text-lg font-heading tracking-wide uppercase text-center px-4 leading-tight drop-shadow-md">
+                                    Descubre el sistema<br><span class="text-brand-yellow text-xs">(Dale Play)</span>
+                                </span>
+                            </div>
+                            <!-- VIDEO (Enlace viejo con #t=0.1 para forzar primer frame como fondo) -->
+                            <video
+                                src="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b892dc4e75902a9c7b35a8.mov#t=0.1"
+                                preload="auto" controls playsinline
+                                class="vsl-video w-full h-full object-cover"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MINI TESTIMONIOS SUPERPUESTOS -->
+                <div class="flex items-center justify-center md:justify-start gap-3 mb-6 group cursor-default">
+                    <div class="flex -space-x-3">
+                        <img src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497deadab24ce3f25c33.webp"
+                            alt="Caso de éxito 1"
+                            class="w-11 h-11 md:w-12 md:h-12 rounded-lg border-2 border-[#0a254a] object-cover shadow-lg transform -rotate-6 hover:rotate-0 hover:scale-[1.8] hover:z-50 transition-all duration-300 relative z-10">
+                        <img src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497d2c710869dffb20cb.webp"
+                            alt="Caso de éxito 2"
+                            class="w-11 h-11 md:w-12 md:h-12 rounded-lg border-2 border-[#0a254a] object-cover shadow-lg hover:scale-[1.8] hover:z-50 transition-all duration-300 relative z-20">
+                        <img src="https://storage.googleapis.com/msgsndr/gmqyL6r8fVPrn56nZ86W/media/6954497dedb8a27ce4dea423.webp"
+                            alt="Caso de éxito 3"
+                            class="w-11 h-11 md:w-12 md:h-12 rounded-lg border-2 border-[#0a254a] object-cover shadow-lg transform rotate-6 hover:rotate-0 hover:scale-[1.8] hover:z-50 transition-all duration-300 relative z-30">
+                    </div>
+                    <div class="text-left flex flex-col justify-center">
+                        <div
+                            class="flex text-brand-yellow text-[10px] md:text-xs gap-0.5 group-hover:scale-105 transition-transform origin-left">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-xs md:text-sm text-blue-200 font-medium leading-tight mt-0.5">Resultados reales
+                            de estudiantes en LATAM. <br class="hidden md:block"><span class="font-bold text-white">No
+                                es suerte. Es sistema + ejecución.</span></p>
+                    </div>
+                </div>
+
+                <!-- CTA PRINCIPAL (ESCRITORIO Y PIE DE PÁRRAFOS) -->
+                <a href="#oferta"
+                    class="btn-text hidden md:inline-block bg-brand-yellow text-brand-darkBlue font-black text-lg md:text-xl px-8 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto text-center mb-4 hover:bg-yellow-400 group leading-tight">
+                    [ 👉 Entra a "Del Caos Financiero a tu Primera Inversión" ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- LÍNEA DE CONFIANZA CORREGIDA -->
+                <div class="flex flex-col items-center md:items-start gap-3 mt-2">
+                    <p class="text-sm text-blue-200 font-medium">
+                        🔒 Pago 100% seguro • ✅ Garantía de 365 días
+                    </p>
+                    <div class="flex justify-center md:justify-start items-center flex-wrap gap-2 text-blue-100 mt-1">
+                        <div
+                            class="h-6 bg-white flex items-center px-2 rounded-sm select-none text-brand-darkBlue shadow-sm">
+                            <i class="far fa-credit-card text-[14px] mr-1.5"></i>
+                            <span class="font-bold text-[12px] tracking-tight font-sans">Tarjetas</span>
+                        </div>
+                        <div class="h-6 bg-white flex items-center px-1.5 rounded-sm select-none shadow-sm">
+                            <span class="text-[#0082c6] font-black text-[13px] italic tracking-wider">PSE</span>
+                        </div>
+                        <div class="h-6 bg-white flex items-center px-1.5 rounded-sm select-none shadow-sm">
+                            <span class="text-black font-bold text-brand-black text-[14px] tracking-tight font-sans">nequi</span><span
+                                class="text-[#e20bc0] text-[24px] leading-[0] mb-2.5 font-black">.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video derecha (VSL) DESKTOP -->
+            <div class="relative hidden md:flex justify-center items-center h-full mt-12 md:mt-0 z-30">
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-800 opacity-30 blur-3xl rounded-full -z-10">
+                </div>
+                <div class="relative z-10 flex items-center justify-center w-full">
+                    <div
+                        class="relative w-full max-w-[600px] aspect-video video-wrapper rounded-2xl shadow-2xl border-4 border-white/20 bg-brand-darkBlue overflow-hidden transition-all duration-500 ease-out origin-center">
+                        <!-- POSTER CSS PERSONALIZADO (EFECTO BORROSO / GLASSMORPHISM) -->
+                        <div
+                            class="custom-video-poster absolute inset-0 bg-brand-darkBlue/40 backdrop-blur-md flex flex-col items-center justify-center cursor-pointer z-20 transition-opacity duration-300 group">
+                            <div
+                                class="bg-brand-yellow text-brand-darkBlue w-20 h-20 rounded-full flex items-center justify-center text-3xl mb-4 shadow-[0_0_30px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform animate-pulse">
+                                <i class="fas fa-play ml-2"></i>
+                            </div>
+                            <span
+                                class="text-white font-black text-2xl font-heading tracking-wide uppercase text-center px-4 leading-tight drop-shadow-md">
+                                Descubre el sistema<br><span class="text-brand-yellow text-sm">(Haz clic para
+                                    ver)</span>
+                            </span>
+                        </div>
+                        <!-- VIDEO (Enlace viejo con #t=0.1 para forzar primer frame como fondo) -->
+                        <video
+                            src="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b892dc4e75902a9c7b35a8.mov#t=0.1"
+                            preload="auto" controls playsinline class="vsl-video w-full h-full object-cover"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN BLOQUEO (ESPECÍFICA ORDEN) -->
+    <section class="py-12 px-4 bg-brand-yellow/10 border-b border-brand-yellow/20 relative">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="bg-brand-yellow text-brand-darkBlue p-6 rounded-2xl shadow-xl transform -rotate-2 shrink-0">
+                <div class="text-sm font-black uppercase tracking-widest mb-1 opacity-80">TU MAYOR BLOQUEO HOY ES:</div>
+                <div class="text-4xl md:text-5xl font-black font-heading leading-tight uppercase leading-none">AHORRO / PROTECCIÓN</div>
+            </div>
+            <div class="text-lg md:text-xl text-brand-darkBlue font-medium leading-relaxed">
+                Sin fondo de emergencia ni reglas claras, <strong class="text-brand-blue">cualquier imprevisto te desarma el sistema</strong>. 
+                Un gasto inesperado puede devolverte al caos aunque "estés ordenado".
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN CUERPO DE BLOQUEO -->
+    <section class="py-16 px-4 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                Tu siguiente paso es blindar tu sistema: <strong class="text-brand-blue">ahorro real, reglas claras y protección antes de crecer</strong>.
+            </p>
+            <a href="#oferta" class="inline-block bg-brand-blue text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-brand-darkBlue transition-all leading-tight">
+                👉 Entra a "Del Caos Financiero a tu Primera Inversión" <br><span class="text-xs opacity-80">(ahí conviertes orden en tranquilidad y base sólida)</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN PROBLEMA -->
+    <section class="py-20 px-4 bg-gray-50 border-y border-gray-200 relative">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2
+                class="text-2xl md:text-3xl font-extrabold text-brand-darkBlue mb-4 font-heading uppercase leading-tight">
+                EL ORDEN POR SÍ SOLO NO CREA PATRIMONIO. NECESITAS UNA BASE BLINDADA.
+            </h2>
+            <p class="text-xl text-gray-600 mb-16 font-medium max-w-3xl mx-auto">
+                Estar organizado es el primer paso, pero quedarse ahí es peligroso. <br>
+                <strong class="text-brand-darkBlue">Si tu orden no tiene protección real, sigues a un imprevisto de distancia del caos.</strong>
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10 mb-12">
+                <div
+                    class="bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-lg hover:-translate-y-1 transition-transform duration-300 card-hover border-t-4 border-brand-red">
+                    <div class="text-brand-red text-5xl mb-6"><i class="fas fa-shield-virus icon-animate"></i></div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-darkBlue font-heading">El "Fondo Invisible"</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">Crees que tienes ahorro, pero en realidad es dinero que ya tiene dueño o que desaparece ante cualquier gasto inesperado porque no tiene reglas de uso.</p>
+                </div>
+                <div
+                    class="bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-lg hover:-translate-y-1 transition-transform duration-300 card-hover border-t-4 border-brand-blue">
+                    <div class="text-brand-blue text-5xl mb-6"><i class="fas fa-lock-open icon-animate"
+                            style="animation-delay: 0.3s;"></i></div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-darkBlue font-heading">Sin blindaje real</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">Tu sistema funciona mientras todo esté bien. Pero no tienes protección real (seguros, fondo de emergencia, estructura) para cuando la vida se pone difícil.</p>
+                </div>
+                <div
+                    class="bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-lg hover:-translate-y-1 transition-transform duration-300 card-hover border-t-4 border-brand-blue">
+                    <div class="text-brand-blue text-5xl mb-6"><i class="fas fa-pause-circle icon-animate"
+                            style="animation-delay: 0.6s;"></i></div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-darkBlue font-heading">El estancamiento del orden</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">Te sientes bien porque ya no hay deudas o desorden absoluto, pero tu dinero no crece. Estás "cómodamente estancado" sin patrimonio real.</p>
+                </div>
+            </div>
+
+            <a href="#oferta"
+                class="btn-text inline-block bg-brand-darkBlue text-brand-yellow font-black text-lg md:text-xl px-10 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto text-center hover:bg-brand-blue group">
+                [ 👉 EMPIEZA POR EL PROGRAMA ] <i
+                    class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+    <section class="py-20 px-4 bg-brand-darkBlue text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5"
+            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+
+            <div class="flex justify-center mb-6">
+                <div class="relative inline-block max-w-fit">
+                    <h2
+                        class="text-2xl md:text-4xl font-extrabold text-white font-heading relative z-10 uppercase leading-tight">
+                        AQUÍ NO VAS A CONSUMIR CONTENIDO. <br><span class="text-brand-yellow">VAS A BLINDAR TU
+                            SISTEMA.</span>
+                    </h2>
+
+                    <!-- CINTICA DIAGONAL -->
+                    <div
+                        class="absolute -top-5 -right-2 md:-right-8 bg-brand-yellow border-2 border-brand-darkBlue shadow-md transform rotate-3 px-3 py-1.5 flex items-center gap-2 rounded-lg z-0 scale-[0.80] md:scale-100 origin-bottom-right pointer-events-none whitespace-nowrap">
+                        <i class="fas fa-comments text-brand-darkBlue text-[14px] md:text-[16px]"></i>
+                        <span
+                            class="text-brand-darkBlue font-black text-[10px] md:text-[12px] tracking-tight uppercase">Incluye
+                            sección de preguntas y respuestas</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-lg md:text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Porque el orden es solo el comienzo. <br>
+                <strong class="text-brand-yellow">Lo que construye libertad es una base protegida que te permita crecer
+                    con total seguridad.</strong>
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left mb-12">
+                <div
+                    class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 h-full hover:bg-white/15 transition-colors">
+                    <i class="fas fa-check-double text-brand-yellow text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl text-white mb-2 font-heading">Validación Profunda</h4>
+                    <p class="text-sm text-blue-100 leading-snug">Vamos a ver si tu orden actual aguanta la presión real. Detectamos grietas antes de que se conviertan en huecos financieros.</p>
+                </div>
+                <div
+                    class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 h-full hover:bg-white/15 transition-colors">
+                    <i class="fas fa-shield-alt text-brand-yellow text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl text-white mb-2 font-heading">Protección Activa</h4>
+                    <p class="text-sm text-blue-100 leading-snug">Instalas reglas de ahorro, fondos específicos y criterios de protección para que tu orden sea indestructible.</p>
+                </div>
+                <div
+                    class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 h-full hover:bg-white/15 transition-colors">
+                    <i class="fas fa-expand-arrows-alt text-brand-yellow text-4xl mb-4"></i>
+                    <h4 class="font-bold text-xl text-white mb-2 font-heading">Expansión con Criterio</h4>
+                    <p class="text-sm text-blue-100 leading-snug">Una vez blindado, aprendes a invertir con lógica. Pasas de "estar ordenado" a construir patrimonio real.</p>
+                </div>
+            </div>
+
+            <a href="#oferta"
+                class="btn-text inline-block bg-brand-yellow text-brand-darkBlue font-black text-lg md:text-xl px-10 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto hover:bg-yellow-400 group">
+                [ QUIERO BLINDAR MI SISTEMA ] <i
+                    class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- TEMARIO -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+
+            <div class="text-center mb-12 flex justify-center">
+                <div class="relative inline-block max-w-fit">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-brand-darkBlue font-heading relative z-10 uppercase">
+                        ESTO ES LO QUE VAS A INSTALAR (MÓDULO POR MÓDULO)
+                    </h2>
+                    <!-- CINTICA DIAGONAL -->
+                    <div
+                        class="absolute -top-5 -right-2 md:-right-8 bg-brand-yellow border-2 border-brand-darkBlue shadow-md transform rotate-3 px-3 py-1.5 flex items-center gap-2 rounded-lg z-0 scale-[0.80] md:scale-100 origin-bottom-right pointer-events-none whitespace-nowrap">
+                        <i class="fas fa-comments text-brand-darkBlue text-[14px] md:text-[16px]"></i>
+                        <span
+                            class="text-brand-darkBlue font-black text-[10px] md:text-[12px] tracking-tight uppercase">Incluye
+                            sección de preguntas y respuestas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4 font-heading mb-12">
+                <!-- Módulos -->
+                <div
+                    class="border border-brand-blue rounded-lg overflow-hidden shadow-md transition-shadow hover:shadow-lg">
+                    <button
+                        class="accordion-header active w-full flex justify-between items-center bg-brand-blue p-5 md:p-6 text-left font-bold text-white transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-white/20 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">1</span>
+                            Módulo 1: Tu Radiografía Financiera
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon active text-white shrink-0"></i>
+                    </button>
+                    <div class="accordion-content active bg-gray-50" style="max-height: 500px; opacity: 1;">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Validamos si tu orden actual es real o solo aparente. Detectamos fugas invisibles y puntos de quiebre en tu estructura.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ... otros módulos ... -->
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">4</span>
+                            Sistema Maestro de Blindaje Financiero
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Aquí instalas las reglas de ahorro real, fondo de emergencia y protección para que tu orden sea indestructible mes a mes.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-white p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-gray-50 transition-colors">
+                        <span class="text-lg md:text-xl flex items-center">
+                            <span
+                                class="bg-gray-100 text-gray-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 text-sm shrink-0">5</span>
+                            Tus Primeras Inversiones con Base
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-gray-400 shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-gray-50">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-gray-100 font-sans">
+                            Aprendes a invertir con criterio sobre una base que ya tiene respaldo. Pasas del "ahorro quieto" al crecimiento inteligente en opciones seguras de LATAM.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acompañamiento -->
+                <div
+                    class="border-2 border-brand-yellow rounded-xl overflow-hidden shadow-lg transition-shadow hover:shadow-xl relative mt-4">
+                    <div
+                        class="absolute top-0 right-0 bg-brand-yellow text-brand-darkBlue text-[10px] md:text-xs font-bold px-3 py-1 rounded-bl-lg z-10 uppercase tracking-wider shadow-sm">
+                        Soporte Directo</div>
+                    <button
+                        class="accordion-header w-full flex justify-between items-center bg-yellow-50/50 p-5 md:p-6 text-left font-bold text-brand-darkBlue hover:bg-yellow-100 transition-colors relative z-20">
+                        <span class="text-lg md:text-xl flex items-center mt-2 md:mt-0">
+                            <i class="fas fa-comments text-brand-darkYellow mr-3 text-2xl"></i>
+                            Sección de Preguntas y Respuestas conmigo
+                        </span>
+                        <i class="fas fa-chevron-down rotate-icon text-brand-darkYellow shrink-0"></i>
+                    </button>
+                    <div class="accordion-content bg-white">
+                        <div
+                            class="p-6 md:p-8 text-gray-700 text-base leading-relaxed border-t border-yellow-200 font-sans">
+                            Tendrás una sección exclusiva de preguntas y respuestas atendida directamente por mí para resolver dudas sobre tu estructura personal.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTORIDAD -->
+    <section class="bg-white py-20 px-4 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3 relative">
+                <div class="absolute inset-0 bg-brand-yellow transform translate-x-3 translate-y-3 rounded-xl -z-0">
+                </div>
+                <img src="https://assets.cdn.filesafe.space/gmqyL6r8fVPrn56nZ86W/media/69b89e483e6072835d4f62be.png"
+                    alt="Diego Tobón"
+                    class="relative z-10 rounded-xl shadow-2xl w-full border-4 border-white object-cover grayscale-[30%]">
+            </div>
+            <div class="md:w-2/3 font-medium text-center md:text-left">
+                <h4 class="text-brand-blue font-bold uppercase tracking-widest mb-3 text-sm font-heading">Tu Instructor
+                </h4>
+                <h2
+                    class="text-3xl md:text-4xl font-extrabold mb-6 font-heading text-brand-darkBlue uppercase leading-tight">
+                    HOLA, SOY DIEGO TOBÓN. AYUDO A PERSONAS A PASAR DEL CONTROL AL CRECIMIENTO REAL.</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                    Construí este programa para que dejes de depender de la buena suerte y empieces a depender de un sistema blindado que proteja tu presente y construya tu futuro.
+                </p>
+                <a href="#oferta"
+                    class="btn-text inline-block bg-brand-darkBlue text-brand-yellow font-black text-lg px-8 py-4 rounded-xl btn-shadow transition-all hover:bg-brand-blue group">
+                    [ QUIERO APRENDER CON ESTE SISTEMA ] <i
+                        class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONOS (Exact same as Supervivenvia) -->
+    <section class="bg-blue-600 py-20 px-4 text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto relative z-10 text-center md:text-left">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold font-heading mb-4">BONOS INCLUIDOS (SIN COSTO ADICIONAL)</h2>
+                <p class="text-xl text-blue-100 font-medium">Además del curso, recibes estos recursos para ejecutar más rápido y cometer menos errores.</p>
+            </div>
+
+            <div class="grid gap-6 mb-12">
+                <div class="bg-blue-700/60 p-6 rounded-2xl flex flex-col md:flex-row items-center border border-blue-500/50 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-1">
+                    <div class="bg-brand-yellow text-brand-darkBlue p-4 rounded-full mb-4 md:mb-0 md:mr-6 shrink-0 shadow-lg"><i class="fas fa-file-invoice-dollar text-3xl icon-animate"></i></div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h4 class="font-bold text-xl text-brand-yellow mb-2 font-heading">BONO #1: Guía de Compra Inteligente</h4>
+                        <p class="text-blue-100 leading-relaxed">Para que dejes de tomar decisiones de consumo que parecen pequeñas, pero terminan reventando tu sistema financiero.</p>
+                    </div>
+                    <div class="text-center md:text-right shrink-0 mt-4 md:mt-0 md:ml-6 flex flex-col items-center md:items-end justify-center">
+                        <span class="text-red-300 font-bold text-sm md:text-base line-through decoration-red-400 decoration-2 mb-1">Valor: $23.000 COP</span>
+                        <div class="font-extrabold text-brand-yellow text-xl md:text-2xl font-heading">INCLUIDO</div>
+                    </div>
+                </div>
+                <!-- Bono 2 y 3 directos de Supervivenvia -->
+                <div class="bg-blue-700/60 p-6 rounded-2xl flex flex-col md:flex-row items-center border border-blue-500/50 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-1">
+                    <div class="bg-brand-yellow text-brand-darkBlue p-4 rounded-full mb-4 md:mb-0 md:mr-6 shrink-0 shadow-lg"><i class="fas fa-comments text-3xl icon-animate" style="animation-delay: 0.3s;"></i></div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h4 class="font-bold text-xl text-brand-yellow mb-2 font-heading">BONO #2: Sección de Preguntas y Respuestas con Diego</h4>
+                        <p class="text-blue-100 leading-relaxed">Un espacio directo en la plataforma para resolver dudas puntuales y ayudarte a aterrizar mejor el proceso.</p>
+                    </div>
+                    <div class="text-center md:text-right shrink-0 mt-4 md:mt-0 md:ml-6 flex flex-col items-center md:items-end justify-center">
+                        <span class="text-red-300 font-bold text-sm md:text-base line-through decoration-red-400 decoration-2 mb-1">Valor: $48.000 COP</span>
+                        <div class="font-extrabold text-brand-yellow text-xl md:text-2xl font-heading">INCLUIDO</div>
+                    </div>
+                </div>
+                <div class="bg-blue-700/60 p-6 rounded-2xl flex flex-col md:flex-row items-center border border-blue-500/50 shadow-lg backdrop-blur-sm transition-transform hover:-translate-y-1">
+                    <div class="bg-brand-yellow text-brand-darkBlue p-4 rounded-full mb-4 md:mb-0 md:mr-6 shrink-0 shadow-lg"><i class="fas fa-rocket text-3xl icon-animate" style="animation-delay: 0.6s;"></i></div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h4 class="font-bold text-xl text-brand-yellow mb-2 font-heading">BONO #3: Protocolo "Ejecución Radical"</h4>
+                        <p class="text-blue-100 leading-relaxed">Porque saber qué hacer no sirve de nada si sigues aplazándolo. Aquí tienes una estructura para ejecutar.</p>
+                    </div>
+                    <div class="text-center md:text-right shrink-0 mt-4 md:mt-0 md:ml-6 flex flex-col items-center md:items-end justify-center">
+                        <span class="text-red-300 font-bold text-sm md:text-base line-through decoration-red-400 decoration-2 mb-1">Valor: $28.000 COP</span>
+                        <div class="font-extrabold text-brand-yellow text-xl md:text-2xl font-heading">INCLUIDO</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#oferta" class="btn-text inline-block bg-brand-yellow text-brand-darkBlue font-black text-xl px-10 py-5 rounded-xl btn-shadow transition-all w-full md:w-auto hover:bg-yellow-400 group">
+                    [ 👉 EMPIEZA POR EL PROGRAMA ]
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA (Identical to Supervivenvia but with Orden stage CTA) -->
+    <section id="oferta" class="py-24 px-4 bg-gray-100 relative">
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-2xl border-4 border-blue-100 overflow-hidden relative transform transition-transform duration-300 hover:shadow-[0_20px_50px_rgba(15,60,122,0.15)]">
+                <div class="absolute top-0 right-0 bg-brand-green text-white text-sm md:text-base font-extrabold px-6 py-2 rounded-bl-2xl z-10 shadow-md font-heading"><i class="fas fa-unlock-alt mr-1"></i> ACCESO INMEDIATO</div>
+
+                <div class="p-8 md:p-12 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="relative inline-block max-w-fit">
+                            <h2 class="text-xl md:text-2xl font-bold text-brand-darkBlue font-heading relative z-10 uppercase">INSCRIPCIÓN AL CURSO</h2>
+                            <div class="absolute -top-5 -right-10 md:-right-24 bg-brand-yellow border-2 border-brand-darkBlue shadow-md transform rotate-3 px-3 py-1.5 flex items-center gap-2 rounded-lg z-0 scale-[0.75] md:scale-100 origin-bottom-right pointer-events-none whitespace-nowrap">
+                                <i class="fas fa-comments text-brand-darkBlue text-[14px] md:text-[16px]"></i>
+                                <span class="text-brand-darkBlue font-black text-[10px] md:text-[12px] tracking-tight uppercase">Incluye sección de preguntas y respuestas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4 font-heading">"Del Caos Financiero a tu Primera Inversión"</h3>
+                    <p class="text-gray-500 font-medium mb-8">El sistema completo para blindar tu orden actual, crear una base protegida y dar tu primer paso de inversión con criterio.</p>
+
+                    <ul class="text-left space-y-4 mb-10 text-gray-700 max-w-md mx-auto font-medium">
+                        <li class="flex items-start group"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span>Acceso completo al curso (6 módulos en video).</span></li>
+                        <li class="flex items-start bg-yellow-50 p-3 rounded-lg -ml-3 group border border-yellow-100 shadow-sm"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span><strong>Sección de preguntas y respuestas atendida directamente por mí.</strong></span></li>
+                        <li class="flex items-start group"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span>Plantillas y herramientas descargables.</span></li>
+                        <li class="flex items-start group"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span>Bono 1: Guía de Compra Inteligente.</span></li>
+                        <li class="flex items-start group"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span>Bono 2: Sección de Preguntas y Respuestas.</span></li>
+                        <li class="flex items-start group"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span>Bono 3: Protocolo Ejecución Radical.</span></li>
+                        <li class="flex items-start group"><i class="fas fa-check-circle text-brand-green mt-1 mr-3 text-xl shrink-0 group-hover:scale-110 transition-transform"></i> <span>Acceso y actualizaciones por 1 año.</span></li>
+                    </ul>
+
+                    <div class="mb-8 pb-8 border-b border-gray-200">
+                        <div class="flex flex-col items-center justify-center mb-3">
+                            <span class="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">Valor Total (Programa + Bonos + Q&A):</span>
+                            <span class="text-2xl md:text-3xl font-bold text-red-500 line-through decoration-red-500/70 decoration-3">$450.000 COP</span>
+                        </div>
+                        <div class="text-sm text-brand-green font-black uppercase tracking-widest mb-2 mt-2">Tu única inversión HOY:</div>
+                        <div class="text-5xl md:text-7xl font-extrabold text-brand-darkBlue font-heading leading-none relative inline-block">
+                            $197.000 <span class="text-2xl md:text-3xl font-bold text-gray-500">COP</span>
+                            <div class="absolute -top-4 -right-8 md:-right-10 bg-brand-green text-white text-[11px] md:text-xs font-black px-2 py-1 rounded-full transform rotate-12 shadow-sm animate-pulse">-56% OFF</div>
+                        </div>
+                    </div>
+
+                    <a href="https://checkout.wompi.co/l/FKWeFM" onclick="if(typeof fbq === 'function') { fbq('track', 'InitiateCheckout', {value: 197000, currency: 'COP'}); }" class="btn-text flex flex-col justify-center items-center gap-1 w-full bg-brand-yellow text-brand-darkBlue font-black py-4 md:py-5 rounded-xl btn-shadow transition-all mb-3 hover:bg-yellow-400 group relative overflow-hidden leading-tight">
+                        <span class="text-xl md:text-2xl relative z-10">[ 👉 Entra a "Del Caos Financiero a tu Primera Inversión" ]</span>
+                        <span class="text-xs md:text-sm font-bold opacity-80 relative z-10">Blindar mi orden y empezar a crecer ⚡</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER Y SCRIPTS (Standard) -->
+    <footer class="bg-[#050f20] text-gray-400 py-12 text-center text-sm font-medium border-t-4 border-brand-yellow">
+        <p class="mb-4">&copy; 2026 Inversiones FCD S.A.S. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        (function () {
+            function initApp() {
+                const videoWrappers = document.querySelectorAll('.video-wrapper');
+                videoWrappers.forEach(wrapper => {
+                    const poster = wrapper.querySelector('.custom-video-poster');
+                    const video = wrapper.querySelector('video');
+                    if (poster && video) {
+                        poster.addEventListener('click', () => {
+                            video.play();
+                            poster.style.opacity = '0';
+                            setTimeout(() => { poster.style.display = 'none'; }, 300);
+                        });
+                    }
+                });
+                const accordions = document.querySelectorAll('.accordion-header');
+                accordions.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const content = button.nextElementSibling;
+                        button.classList.toggle('active');
+                        if (content) {
+                            content.classList.toggle('active');
+                            content.style.maxHeight = content.classList.contains('active') ? content.scrollHeight + "px" : null;
+                            content.style.opacity = content.classList.contains('active') ? "1" : "0";
+                        }
+                    });
+                });
+            }
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initApp);
+            else initApp();
+        })();
+    </script>
+</body>
+
+</html>
